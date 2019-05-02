@@ -26,5 +26,4 @@ public class IncomeTaxCalculatorTest {
 
         assertThat(incomeTaxCalculator.calculateIncomeTax(20_000,1700,1150L)).isEqualTo("You have paid the correct amount");
     }
-
 }
