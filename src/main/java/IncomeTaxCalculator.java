@@ -8,7 +8,6 @@ public class IncomeTaxCalculator {
     public String taxStatus;
 
     public String calculateIncomeTax(double annualSalary, double taxPaid, double taxCode) {
-
         if (taxDue > taxPaid) {
             taxStatus = ("You have not paid enough tax. You owe" + (taxDue - taxPaid));
         } else if (taxDue < taxPaid) {
