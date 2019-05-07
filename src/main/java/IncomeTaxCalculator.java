@@ -1,20 +1,68 @@
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
 public class IncomeTaxCalculator {
 
-    public static final double TAX_STANDARD_RATE = 0.2;
-    public double annualSalary;
-    public double taxCode;
-    public double taxPayableSalary = annualSalary - (taxCode*10);
-    public double taxDue = taxPayableSalary*TAX_STANDARD_RATE;
-    public String taxStatus;
+    private static final double TAX_CODE_1819 = 11850;
+    private static final double TAX_BASIC_RATE = 0.2;
+    private static final double TAX_HIGHER_RATE = 0.4;
+    private static final double TAX_ADDITIONAL_RATE = 0.45;
+    private static final double BASIC_RATE_UPPER_LIMIT = 34500;
+    private static final double HIGHER_RATE_UPPER_LIMIT = 150_000;
+    private double taxDue;
 
-    public String calculateIncomeTax(double annualSalary, double taxPaid, double taxCode) {
+    private void calculateBasicRate(double annualSalary) {
+        taxDue = (annualSalary - TAX_CODE_1819) * TAX_BASIC_RATE;
+    }
+
+    private void calculateHigherRate(double annualSalary) {
+        taxDue = BASIC_RATE_UPPER_LIMIT * TAX_BASIC_RATE + (annualSalary - (TAX_CODE_1819 + BASIC_RATE_UPPER_LIMIT)) * TAX_HIGHER_RATE;
+    }
+
+    private void calculateAdvancedRate(double annualSalary) {
+        taxDue = (BASIC_RATE_UPPER_LIMIT * TAX_BASIC_RATE) + (HIGHER_RATE_UPPER_LIMIT * TAX_HIGHER_RATE)
+                + (annualSalary - (TAX_CODE_1819 + BASIC_RATE_UPPER_LIMIT + HIGHER_RATE_UPPER_LIMIT)) * TAX_ADDITIONAL_RATE;
+    }
+
+    private void calculatetaxBands(double annualSalary) {
+        if (annualSalary <= TAX_CODE_1819) {
+            taxDue = 0;
+        } else if (annualSalary > TAX_CODE_1819 && annualSalary <= BASIC_RATE_UPPER_LIMIT) {
+            calculateBasicRate(annualSalary);
+        } else if (annualSalary > 34501 && annualSalary <= 150000) {
+            calculateHigherRate(annualSalary);
+        } else if (annualSalary > 150000) {
+            calculateAdvancedRate(annualSalary);
+        }
+    }
+
+    public void calculateIncomeTax(double taxPaid) {
+        String taxStatus;
         if (taxDue > taxPaid) {
-            taxStatus = ("You have not paid enough tax. You owe" + (taxDue - taxPaid));
+            taxStatus = ("You have not paid enough tax. You owe £" + new DecimalFormat("##.##").format(taxDue - taxPaid) + "!");
         } else if (taxDue < taxPaid) {
-            taxStatus = ("You have paid too much tax. You are owed" + (taxDue - taxPaid));
+            taxStatus = ("You have paid too much tax. You are owed £" + new DecimalFormat("##.##").format(taxDue - taxPaid) + "!");
         } else {
             taxStatus = "You have paid the correct amount";
         }
-        return taxStatus;
+        System.out.println(taxStatus);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Have you paid too much income tax? Let's find out! \n" +
+                        "Do you have your P60?");
+        String p60 = new Scanner(System.in).next();
+        if (p60.equalsIgnoreCase("yes") || p60.equalsIgnoreCase("Y")) {
+            System.out.println("For the following questions, please use the information provided on your P60. \n" +
+                    " What was your total annual salary last year?");
+            double annualSalary = new Scanner(System.in).nextDouble();
+            System.out.println("How much tax did you pay?");
+            double taxPaid = new Scanner(System.in).nextDouble();
+            IncomeTaxCalculator incomeTaxCalculator = new IncomeTaxCalculator();
+            incomeTaxCalculator.calculatetaxBands(annualSalary);
+            incomeTaxCalculator.calculateIncomeTax(taxPaid);
+        } else {
+            System.out.println("Please come back when you have your P60");
+        }
     }
 }
