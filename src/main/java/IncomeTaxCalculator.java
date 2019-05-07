@@ -29,19 +29,21 @@ public class IncomeTaxCalculator {
             taxDue = 0;
         } else if (annualSalary > TAX_CODE_1819 && annualSalary <= BASIC_RATE_UPPER_LIMIT) {
             calculateBasicRate(annualSalary);
-        } else if (annualSalary > 34501 && annualSalary <= 150000) {
+        } else if (annualSalary > BASIC_RATE_UPPER_LIMIT && annualSalary <= HIGHER_RATE_UPPER_LIMIT) {
             calculateHigherRate(annualSalary);
-        } else if (annualSalary > 150000) {
+        } else if (annualSalary > HIGHER_RATE_UPPER_LIMIT) {
             calculateAdvancedRate(annualSalary);
         }
     }
 
     public void calculateIncomeTax(double taxPaid) {
         String taxStatus;
+        String taxOwed = new DecimalFormat("##.##").format(taxDue - taxPaid);
         if (taxDue > taxPaid) {
-            taxStatus = ("You have not paid enough tax. You owe £" + new DecimalFormat("##.##").format(taxDue - taxPaid) + "!");
+            taxStatus = ("You have not paid enough tax. You owe £" + taxOwed + "! Your total tax due for the year was £" + taxDue);
         } else if (taxDue < taxPaid) {
-            taxStatus = ("You have paid too much tax. You are owed £" + new DecimalFormat("##.##").format(taxDue - taxPaid) + "!");
+            taxStatus = ("You have paid too much tax. You are owed £" + taxOwed + "! Your total tax due for the year was £" + taxDue);
+
         } else {
             taxStatus = "You have paid the correct amount";
         }
