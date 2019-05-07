@@ -54,7 +54,7 @@ public class IncomeTaxCalculator {
         String p60 = new Scanner(System.in).next();
         if (p60.equalsIgnoreCase("yes") || p60.equalsIgnoreCase("Y")) {
             System.out.println("For the following questions, please use the information provided on your P60. \n" +
-                     " What was your total annual salary last year?");
+                     "What was your total annual salary last year?");
             double annualSalary = new Scanner(System.in).nextDouble();
             System.out.println("How much tax did you pay?");
             double taxPaid = new Scanner(System.in).nextDouble();
