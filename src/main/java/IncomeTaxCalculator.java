@@ -38,7 +38,7 @@ public class IncomeTaxCalculator {
 
     public void calculateIncomeTax(double taxPaid) {
         String taxStatus;
-        String taxOwed = new DecimalFormat("##.##").format(taxDue - taxPaid);
+        String taxOwed = new DecimalFormat("##.##").format(Math.abs(taxDue - taxPaid));
         if (taxDue > taxPaid) {
             taxStatus = ("You have not paid enough tax. You owe £" + taxOwed + "! Your total tax due for the year was £" + taxDue);
         } else if (taxDue < taxPaid) {
