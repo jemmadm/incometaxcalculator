@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class IncomeTaxCalculator {
 
+    //configurable?
     private static final double TAX_CODE_1819 = 11850;
     private static final double TAX_BASIC_RATE = 0.2;
     private static final double TAX_HIGHER_RATE = 0.4;
