@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="772b7c67-8a7c-4e8d-b83e-1ba009b25ec6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/IncomeTaxCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/IncomeTaxCalculator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IncomeTaxCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IncomeTaxCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/IncomeTaxCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IncomeTaxCalculatorTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="772b7c67-8a7c-4e8d-b83e-1ba009b25ec6" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -53,11 +44,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/IncomeTaxCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="-497">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,11 +56,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Downloads/gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/IncomeTaxCalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="87" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="87" />
+            <state relative-caret-position="405">
+              <caret line="42" column="1" selection-start-line="4" selection-end-line="42" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,10 +99,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
-    <option name="height" value="792" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -168,7 +167,7 @@
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -261,7 +260,7 @@
       <option name="presentableId" value="Default" />
       <updated>1556787147141</updated>
       <workItem from="1556787148688" duration="6224000" />
-      <workItem from="1557410635436" duration="4770000" />
+      <workItem from="1557410635436" duration="5342000" />
     </task>
     <task id="LOCAL-00001" summary="Added initial code and 3 tests">
       <created>1556797430629</created>
@@ -312,13 +311,17 @@
       <option name="project" value="LOCAL" />
       <updated>1557333095884</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="methods renamed, more tests added, Scanner amended to only be created once">
+      <created>1557416514607</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1557416514608</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IncomeTaxCalculatorTest - 2019.05.09 at 16h 18m 20s.xml">
-      <configuration name="IncomeTaxCalculatorTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="IncomeTaxCalculatorTest - 2019.05.09 at 16h 20m 13s.xml">
       <configuration name="IncomeTaxCalculatorTest" configurationId="JUnit" />
     </history-entry>
@@ -346,16 +349,18 @@
     <history-entry file="IncomeTaxCalculatorTest - 2019.05.09 at 16h 37m 21s.xml">
       <configuration name="IncomeTaxCalculatorTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="IncomeTaxCalculatorTest - 2019.05.09 at 16h 46m 03s.xml">
+      <configuration name="IncomeTaxCalculatorTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32582000" />
+    <option name="totallyTimeSpent" value="33154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4979253" visible="true" weight="0.2532189" />
+      <window_info id="Structure" order="1" sideWeight="0.5020747" side_tool="true" weight="0.2532189" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
@@ -375,6 +380,7 @@
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="13" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3297568" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -395,7 +401,11 @@
     <MESSAGE value="User input added, refactored and all tax bands accounted for" />
     <MESSAGE value="more refactoring around using constants and removing remaining duplication" />
     <MESSAGE value="changed calculateIncomeTax method as overpayment showed a negative value instead of positive" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed calculateIncomeTax method as overpayment showed a negative value instead of positive" />
+    <MESSAGE value="methods renamed, more tests added, Scanner amended to only be created once" />
+    <option name="LAST_COMMIT_MESSAGE" value="methods renamed, more tests added, Scanner amended to only be created once" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/income_tax_calculator$IncomeTaxCalculatorTest.ic" NAME="IncomeTaxCalculatorTest Coverage Results" MODIFIED="1557416760741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/2.9.1/f17746dfe6bac3c30706a0c51cac6858f1281206/assertj-core-2.9.1-sources.jar!/org/assertj/core/api/Assertions.java">
@@ -417,8 +427,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/IncomeTaxCalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="87" selection-start-line="25" selection-start-column="87" selection-end-line="25" selection-end-column="87" />
+        <state relative-caret-position="405">
+          <caret line="42" column="1" selection-start-line="4" selection-end-line="42" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -427,11 +437,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/IncomeTaxCalculator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="-497">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
         </state>
       </provider>
     </entry>
