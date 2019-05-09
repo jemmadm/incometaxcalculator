@@ -14,3 +14,10 @@ gradle-app.setting
 /bin/
 *.class
 
+.DS_Store
+.gradle/4.10.3/vcsMetadata-1/
+build/classes/java/test/
+build/tmp/compileJava/
+build/tmp/compileTestJava/
+src/main/resources/
+src/test/resources/
