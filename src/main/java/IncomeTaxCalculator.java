@@ -28,11 +28,11 @@ public class IncomeTaxCalculator {
         double taxDue = 0;
         if (annualSalary <= TAX_CODE_1819) {
             taxDue = 0;
-        } else if (annualSalary > TAX_CODE_1819 && annualSalary <= BASIC_RATE_UPPER_LIMIT) {
+        } else if (annualSalary <= BASIC_RATE_UPPER_LIMIT) {
             taxDue = calculateBasicRateTaxDue(annualSalary);
-        } else if (annualSalary > BASIC_RATE_UPPER_LIMIT && annualSalary <= HIGHER_RATE_UPPER_LIMIT) {
+        } else if (annualSalary <= HIGHER_RATE_UPPER_LIMIT) {
             taxDue = calculateHigherRateTaxDue(annualSalary);
-        } else if (annualSalary > HIGHER_RATE_UPPER_LIMIT) {
+        } else {
             taxDue = calculateAdvancedRateTaxDue(annualSalary);
         }
         return taxDue;
